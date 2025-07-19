@@ -3,7 +3,7 @@
 let balance = 120;
 console.log(balance);
 // typeof()function in Javascript.
-console.log(typeof(balance));
+console.log(typeof balance);
 
 //This is complex data type therefore we can say everything in javascript is object
 console.log();
@@ -12,7 +12,7 @@ console.log();
 //In javascript we can say everything is object.
 let base = new Number(120);
 console.log(base);
-console.log(typeof(base));
+console.log(typeof base);
 console.log(base.valueOf());
 
 //Boolean
@@ -23,16 +23,15 @@ let isActive = true;
 let isChecked = new Boolean(true); //Not recommended way
 console.log(isChecked.valueOf());
 
-
 // null and undefined
 console.log();
 console.log("About null and undefined:- ");
 
 let firstName;
-console.log(typeof(firstName));
+console.log(typeof firstName);
 //It will print "undefined" bcs it exist but defination is not their
 
-console.log(typeof(gameBoy));
+console.log(typeof gameBoy);
 //Above code also print "undefined" if we not declare anything
 
 //Here we explicity define "null" and "undefined"
@@ -51,12 +50,11 @@ console.log();
 
 //Many way of define a string in JS.
 let s1 = "Hello"; //using double quote
-let s2 = 'Hi';    //using single quote
+let s2 = "Hi"; //using single quote
 
 //another way is using back tack.This back tack present below esc key.
 
 let greetMessage = `Good Morning`;
-
 
 let oldGreet = s1 + "Subhash";
 console.log(oldGreet);
@@ -70,12 +68,12 @@ let greet = `${s1} Subhash !`;
 console.log(greet);
 
 //This "back tack" also do computation here
-let value = `Value is: ${2*2}`;
+let value = `Value is: ${2 * 2}`;
 console.log(value);
 
 //Symbol
 //Symbol:- It actually uniquely identifies or gives you a unique value
-//altogether 
+//altogether
 //what the value is going to be, sometimes you can control it, sometimes you
 //don't control it you can just "name" that value. But it's a uniqueness that's
 //guaranteed that the only thing
