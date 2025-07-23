@@ -39,16 +39,16 @@ store each tea type in an array named `teaCollection`
 
 //code:-
 
-const teaCollection = [];
-let tea; //It is undefined intially
+// const teaCollection = [];
+// let tea; //It is undefined intially
 
-do {
-  tea = prompt(`Enter your favourite tea (type "stop" to finish)`);
-  if (tea === "stop") break;
-  else teaCollection.push(tea);
-} while (true);
+// do {
+//   tea = prompt(`Enter your favourite tea (type "stop" to finish)`);
+//   if (tea === "stop") break;
+//   else teaCollection.push(tea);
+// } while (true);
 
-console.log(teaCollection);
+// console.log(teaCollection);
 
 //Remmeber one thing that Nodejs not support the `prompt` therefore we need to check our
 //solution of above code in the browser console.
@@ -57,3 +57,47 @@ console.log(teaCollection);
 4. Write a `do while` loop that adds numbers from 1 to 3 and stores the result in a
 variable named `total`.
 */
+
+//Code:-
+
+// let total = 0;
+// let i = 1;
+
+// do {
+//   total += i;
+//   i++;
+// } while (i <= 3);
+
+// console.log(total);
+
+/*5. Write a `for` loop that multiple each element in the array `[2, 4, 6]` by 2 and
+stored the result in a new array named `multipliedNumbers`
+*/
+
+//code:-
+
+// const arr = [2, 4, 6];
+// const multipliedNumbers = [];
+// for (let i = 0; i < arr.length; i++) {
+//   // multipliedNumbers[i] = 2 * arr[i]; //Usually in Programming language we cannot able
+//   //to add element in the index if size is not declare but in javascript you can do that
+//   multipliedNumbers.push(2 * arr[i]);
+// }
+
+// console.log(multipliedNumbers);
+
+/*
+6. Write the for loop that list all the cities in the array `Paris`, `New York`, `Tokyo`
+, 'London' and stores each city in a new array named `cityList`
+*/
+
+//Code:-
+
+// const arr = ["Paris", "New York", "Tokyo", "London"];
+// const cityList = [];
+
+// for (let i = 0; i < arr.length; ++i) {
+//   cityList.push(arr[i]);
+// }
+
+// console.log(cityList);
