@@ -150,5 +150,70 @@ named `availableTeas`
 //------------ In general there is no for Each loop in Js similar to C++ it is different
 //here -------------------------------------------------------------------------------
 
-const arr = ["earl grey", "green tea", "chai", "oolang tea"];
-const availableTeas = [];
+// const arr = ["earl grey", "green tea", "chai", "oolang tea"];
+// const availableTeas = [];
+
+// //These forEach loop take the function and you can provide any functionality as you want.
+// arr.forEach(function (item) {
+//   if (item === "chai") return; // here we cannot able to use the "break" bcs we cannot get out of fn.
+//   availableTeas.push(item);
+// });
+
+// console.log(availableTeas);
+
+/*
+8. Write a `forEach` loop that iterates through the array ["Berlin", "Tokyo", "Sydney",
+"Paris"]. Skip `Sydney` and store the other cities in a new array named 'traveledCities'
+*/
+
+// const cities = ["Berlin", "Tokyo", "Sydney", "Paris"];
+
+// const traveledCities = [];
+
+// cities.forEach(function (city) {
+//   if (city === "Sydney") return;
+//   traveledCities.push(city);
+// });
+
+// console.log(traveledCities);
+
+/*
+9. Write a `for` loop that iterate through the array [2, 5, 7, 9] skip the value
+7 and multiple the rest by 2. Store the result in new array named `doubledNumbers`
+*/
+
+//code:-
+
+// const nums = [2, 5, 7, 9];
+// const doubledNumbers = [];
+
+// for (let i = 0; i < nums.length; i++) {
+//   if (nums[i] == 7) continue;
+//   doubledNumbers.push(2 * nums[i]);
+// }
+
+// console.log(doubledNumbers);
+
+/*
+10. Use a `for-of' loop to iterate through the array `["chai", "green tea", "black tea",
+"jasmine tea", "herbal tea"]` and stop when the length of the current tea name is  greater
+than 10 . Store the rest teas iterated over in an array named `shortTeas`.
+*/
+
+//code:-
+
+const teaTypes = [
+  "chai",
+  "green tea",
+  "black tea",
+  "jasmine tea",
+  "herbal tea",
+];
+
+const shortTeas = [];
+
+for (tea of teaTypes) {
+  if (tea.length >= 10) break;
+  shortTeas.push(tea);
+}
+console.log(shortTeas);
