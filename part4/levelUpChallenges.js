@@ -170,6 +170,8 @@ named `availableTeas`
 
 // const traveledCities = [];
 
+// These is also the example of 'higher order function' or 'first-class function'.
+
 // cities.forEach(function (city) {
 //   if (city === "Sydney") return;
 //   traveledCities.push(city);
