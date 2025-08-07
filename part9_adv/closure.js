@@ -13,6 +13,7 @@ function outerFunc() {
   return function () {
     counter++;
     return counter;
+    ``;
   };
 }
 
