@@ -4,12 +4,16 @@ We generally uses the promises to deal with the asynchoronus behaviour of Javasc
 */
 
 function fetchData() {
-  //Promise declare using the new keyword and promise take callback(fn) which take
+  //Promise declare using the new keyword and promise `take callback(fn)` which take
   //two parameter resolve or reject.
   //Here resolve and reject is nothing but function.
+  /*
+  In JavaScript Promises, resolve and reject are two callback functions passed as arguments to the executor function of a Promise constructor. They are used to signal the outcome of an asynchronous operation.
+  */
 
   // ()=>{} (callback function)
   return new Promise((resolve, reject) => {
+    //For asynchronus behaviour we use the `setTimeout`
     setTimeout(() => {
       let success = false;
       if (success) {
@@ -32,6 +36,7 @@ fetchData()
   })
   .catch((error) => {
     console.error(error);
+    // console.log(error);
   });
 
 //Always remember `.then` or `.catch` take the call back
