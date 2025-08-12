@@ -57,7 +57,7 @@ function Drink(name) {
   //Here we checking the error that some one creating the object using the
   // 'new' keyword or not  for this we use the {new.target}  ----> learning
   if (!new.target) {
-    //Just like function constructor we defining we have function constructor for
+    //Just like` function constructor` we defining we have function constructor for
     // 'Error' to actually raise the error we use the keyword 'throw'
     throw new Error("Drink must be called with new keyword");
   }
@@ -66,4 +66,6 @@ function Drink(name) {
 }
 
 let milk = new Drink("milk");
-let juice = Drink("Juice");
+console.log(milk);
+
+// let juice = Drink("Juice");

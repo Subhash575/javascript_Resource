@@ -13,6 +13,7 @@ function multiply(a, b) {
   return a * b;
 }
 
+//It is nothing but object.
 module.exports = {
   add,
   subtract,
