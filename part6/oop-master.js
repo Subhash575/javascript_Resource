@@ -158,6 +158,7 @@ let penguin = new Penguin();
 // console.log(penguin.fly());
 
 //static method.
+
 //Static method: It is the 'special method' which can only be called by the 'class' itself.
 //An nobody can able to call it.
 
